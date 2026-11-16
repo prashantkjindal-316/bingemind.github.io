@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<!-- bm-consent-default v1 -->
+<script>window.dataLayer=window.dataLayer||[];window.bmAnalyticsAllowed=false;function gtag(){if(arguments[0]==='event'&&!window.bmAnalyticsAllowed)return;window.dataLayer.push(arguments)}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script>
+<!-- /bm-consent-default -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+      // GA4 event "tool_used": once per page load, on the first real use of the tool.
+      (function () {
+        var sent = false;
+        var CONTROL = 'input,select,textarea,button,label,canvas,[contenteditable],[role="button"],[role="tab"],[role="switch"],[role="checkbox"],[role="radio"],[role="slider"]';
+        function slug() {
+          // Shared hosts (bingemind.com/<slug>/, github.io previews) use the first path segment. A tool's own domain uses the host name.
+          var h = location.hostname;
+          if (/(^|\.)(bingemind\.com|github\.io)$/.test(h)) return location.pathname.split('/').filter(Boolean)[0] || h;
+          return h.replace(/^www\./, '');
+        }
+        function onUse(e) {
+          if (sent || !window.bmAnalyticsAllowed || typeof gtag !== 'function') return;
+          var t = e.target;
+          if (!t || !t.closest) return;
+          var main = document.getElementById('main');
+          if (!main || !main.contains(t)) return;
+          if (t.closest('header,nav,footer,details,summary,a')) return;
+          if (e.type === 'click' && !t.closest(CONTROL)) return;
+          sent = true;
+          gtag('event', 'tool_used', { tool: slug() });
+        }
+        ['input', 'change', 'click'].forEach(function (n) { document.addEventListener(n, onUse, true); });
+      })();
+    </script>
+<title>Free QR Code Generator: Logo, Colours, Never Expires</title>
+<meta name="description" content="Make QR codes for links, Wi-Fi, contacts, email, SMS and text. Add your logo and colours, test that it scans, and download PNG or SVG. Free, no sign-up, never expires.">
+<link rel="canonical" href="https://bingemind.com/qr-code-generator/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bingemind">
+<meta property="og:title" content="Free QR Code Generator: Logo, Colours, Never Expires">
+<meta property="og:description" content="QR codes with your logo and colours that never expire. PNG or SVG.">
+<meta property="og:url" content="https://bingemind.com/qr-code-generator/">
+<meta property="og:image" content="https://bingemind.com/qr-code-generator/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free QR Code Generator: QR codes with your logo and colours that never expire. PNG or SVG.">
+<meta name="twitter:image" content="https://bingemind.com/qr-code-generator/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090d1c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon_io/favicon-32x32.png">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="./kit.css">
+<link rel="modulepreload" href="./kit.js"><link rel="modulepreload" href="./region.js">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Free QR Code Generator","url":"https://bingemind.com/qr-code-generator/","inLanguage":"en","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","dateModified":"2026-11-15","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Bingemind","url":"https://bingemind.com/"},"isPartOf":{"@type":"WebSite","name":"Bingemind","url":"https://bingemind.com/"},"description":"Make QR codes for links, Wi-Fi, contacts, email, SMS and text. Add your logo and colours, test that it scans, and download PNG or SVG. Free, no sign-up, never expires."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tools","item":"https://bingemind.com/tools/"},{"@type":"ListItem","position":2,"name":"Free QR Code Generator","item":"https://bingemind.com/qr-code-generator/"}]}]}
+</script>
+<script type="application/ld+json" id="faq-schema">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this QR code generator really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no sign-up, no watermark, no limit and no expiry. The codes are static, so they keep working for ever."}},{"@type":"Question","name":"Do QR codes expire?","acceptedAnswer":{"@type":"Answer","text":"Static QR codes, like the ones made here, never expire because the content is stored in the code itself. Dynamic codes from some sites stop working if the subscription or redirect service ends."}},{"@type":"Question","name":"How do I make a QR code for Wi-Fi?","acceptedAnswer":{"@type":"Answer","text":"Choose Wi-Fi, enter the network name and password and pick the security type. Guests scan the code with their phone camera to join without typing the password."}},{"@type":"Question","name":"Can I add a logo to my QR code?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upload a PNG, JPG, WebP or SVG logo. It is placed in the centre and error correction is raised to High so the code still scans. Use the scan test to confirm it."}},{"@type":"Question","name":"What size should a printed QR code be?","acceptedAnswer":{"@type":"Answer","text":"At least 2 cm (0.8 inches) wide for close-up use such as business cards, and about one tenth of the scanning distance for posters. Download the SVG for print so it stays sharp."}},{"@type":"Question","name":"Why is my QR code not scanning?","acceptedAnswer":{"@type":"Answer","text":"The usual causes are low contrast, light dots on a dark background, a cropped white border, a logo that is too large or a code printed too small. The tool warns about the first two and tests scanning in Chrome and Edge."}},{"@type":"Question","name":"Can I track how many people scan my QR code?","acceptedAnswer":{"@type":"Answer","text":"Not with a static code, because there is no redirect. You can add tracking parameters to your link, such as utm_source=flyer, and see the visits in your website analytics."}}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415157843778771"
+     crossorigin="anonymous"></script>
+<!-- bm-ad-safe v1: added by briefs/inject_adsense.py (ADS-2). Google anchor ads float over the top or bottom edge of the screen. -->
+<style id="bm-ad-safe">
+@media screen {
+  /* Room at the end of every page, so the footer and the last buttons can scroll clear of a bottom anchor ad (up to 100 px tall, plus a 24 px gap). Present from the first paint, so nothing moves when an ad shows. */
+  body::after { content: ""; display: block; height: calc(124px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 1023px) {
+  /* Phones and tablets: the header scrolls away with the page, so its links never stay under or next to a top anchor ad. */
+  header.sticky { position: static; }
+}
+</style>
+<!-- /bm-ad-safe -->
+<link rel="stylesheet" href="/js/site-footer.css">
+</head>
+<body><!-- bm-topbar v1 --><style>.bm-topbar{background:#fff;border-bottom:1px solid #e5e7eb;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;position:relative;z-index:50}.bm-topbar nav{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:4px;min-height:44px;flex-wrap:wrap}.bm-topbar a{color:#374151;text-decoration:none;padding:12px 10px;border-radius:6px}.bm-topbar a:hover,.bm-topbar a:focus-visible{color:#111827;background:#f3f4f6}.bm-topbar a:focus-visible{outline:2px solid #2563eb;outline-offset:1px}.bm-topbar .bm-brand{font-weight:700;color:#111827;margin-right:auto;padding-left:0}@media (prefers-color-scheme:dark){.bm-topbar{background:#0b0f17;border-color:#1f2937}.bm-topbar a{color:#d1d5db}.bm-topbar a:hover,.bm-topbar a:focus-visible{color:#fff;background:#1f2937}.bm-topbar .bm-brand{color:#fff}}@media print{.bm-topbar{display:none}}</style><div class="bm-topbar"><nav aria-label="Bingemind"><a class="bm-brand" href="/">Bingemind</a><a href="/tools/">All tools</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div><!-- /bm-topbar -->
+<a class="skip" href="#calc">Skip to the tool</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="https://bingemind.com/"><span class="brand-dot" aria-hidden="true"></span>Bingemind</a>
+    <nav class="head-nav" aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <span data-region-picker></span>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <p class="crumbs rise"><a href="https://bingemind.com/tools/">Tools</a> / Free QR Code Generator</p>
+      <span class="eyebrow rise d1">Links · Wi-Fi · contacts · made on your device</span>
+      <h1 class="lift"><span class="shine">Free QR Code Generator</span></h1>
+      <p class="lede lift">Pick what the code should do, type the details and see your QR code instantly. Add a logo and brand colours, check it scans, then download a sharp PNG or SVG. Codes are static, so they work forever and nobody can switch them off.</p>
+      <ul class="trust rise d4"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Never expires</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Logo and colours</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Built-in scan test</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>PNG and SVG</li></ul>
+      <p class="byline rise d4">By the Bingemind tools team · Last checked <time datetime="2026-11-15">15 November 2026</time>.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <noscript><p class="note">This tool needs JavaScript. Without it, most phone camera apps can also share a link as a QR code.</p></noscript>
+    <div class="tool" id="calc">
+      <form class="card lift" id="form" novalidate>
+        <h2>What should it do?</h2>
+        <p class="sub">The code updates as you type. Everything is made in your browser and nothing is uploaded.</p>
+        <div class="fields">
+          <div class="field"><span class="lbl" id="typeL">Type</span><div class="seg seg-wrap" id="type" aria-labelledby="typeL">
+            <button type="button" data-value="url" aria-checked="true">Link</button><button type="button" data-value="text">Text</button><button type="button" data-value="wifi">Wi-Fi</button><button type="button" data-value="email">Email</button><button type="button" data-value="phone">Call</button><button type="button" data-value="sms">SMS</button><button type="button" data-value="vcard">Contact</button>
+          </div></div>
+          <div class="field" data-type="url"><label for="url">Website or link</label><input class="input" id="url" type="url" value="https://bingemind.com/" maxlength="1000" autocomplete="off" inputmode="url"></div>
+          <div class="field" data-type="text"><label for="text">Text</label><textarea class="input" id="text" rows="4" maxlength="2000"></textarea></div>
+          <div class="grid-2" data-type="wifi"><div class="field"><label for="ssid">Network name (SSID)</label><input class="input" id="ssid" type="text" maxlength="64" autocomplete="off"></div><div class="field"><label for="pass">Password</label><input class="input" id="pass" type="text" maxlength="64" autocomplete="off" spellcheck="false"></div></div>
+          <div class="grid-2" data-type="wifi"><div class="field"><label for="enc">Security</label><select class="input" id="enc"><option value="WPA">WPA / WPA2 / WPA3</option><option value="WEP">WEP</option><option value="nopass">No password</option></select></div><div class="field"><span class="lbl">&nbsp;</span><label class="check"><input type="checkbox" id="hidden"> Hidden network</label></div></div>
+          <div class="field" data-type="email"><label for="to">Send to</label><input class="input" id="to" type="email" maxlength="200" autocomplete="off"></div><div class="field" data-type="email"><label for="subject">Subject</label><input class="input" id="subject" type="text" maxlength="200"></div><div class="field" data-type="email"><label for="body">Message</label><textarea class="input" id="body" rows="3" maxlength="2000"></textarea></div>
+          <div class="field" data-type="phone"><label for="phone">Phone number (with country code)</label><input class="input" id="phone" type="tel" maxlength="30" placeholder="+44 20 7946 0000"></div>
+          <div class="field" data-type="sms"><label for="phone2">Phone number (with country code)</label><input class="input" id="phone2" type="tel" maxlength="30" placeholder="+1 555 010 1234"></div><div class="field" data-type="sms"><label for="message">Message</label><textarea class="input" id="message" rows="3" maxlength="2000"></textarea></div>
+          <div class="grid-2" data-type="vcard"><div class="field"><label for="first">First name</label><input class="input" id="first" type="text" maxlength="60"></div><div class="field"><label for="last">Last name</label><input class="input" id="last" type="text" maxlength="60"></div></div>
+          <div class="grid-2" data-type="vcard"><div class="field"><label for="org">Company</label><input class="input" id="org" type="text" maxlength="80"></div><div class="field"><label for="title">Job title</label><input class="input" id="title" type="text" maxlength="80"></div></div>
+          <div class="grid-2" data-type="vcard"><div class="field"><label for="vphone">Phone</label><input class="input" id="vphone" type="tel" maxlength="30"></div><div class="field"><label for="vemail">Email</label><input class="input" id="vemail" type="email" maxlength="120"></div></div>
+          <div data-type="vcard"><div class="field"><label for="site">Website</label><input class="input" id="site" type="url" maxlength="200"></div></div>
+          <details class="adv" open><summary>Design: colours, logo and size</summary>
+            <div class="grid-2"><div class="field"><label for="fg">Dots colour</label><input class="input color" id="fg" type="color" value="#12162a"></div><div class="field"><label for="bg">Background</label><input class="input color" id="bg" type="color" value="#ffffff"></div></div>
+            <div class="field"><label for="logoFile">Logo in the middle <span class="hint">(optional)</span></label><div class="logo-row"><input class="input" type="file" id="logoFile" accept="image/png,image/jpeg,image/webp,image/svg+xml"><button class="btn small" type="button" id="noLogo" hidden>Remove logo</button></div><p class="hint" id="eclNote" hidden>With a logo, error correction is set to High (30%) so the code still scans.</p></div>
+            <div class="grid-2"><div class="field"><label for="ecl">Error correction</label><select class="input" id="ecl"><option value="L">Low (7%) · smallest</option><option value="M" selected>Medium (15%) · recommended</option><option value="Q">Quartile (25%)</option><option value="H">High (30%) · for print and logos</option></select></div>
+            <div class="field"><label for="size">Download size</label><select class="input" id="size"><option value="300">300 × 300 px</option><option value="600">600 × 600 px</option><option value="1000" selected>1000 × 1000 px</option><option value="2000">2000 × 2000 px (print)</option></select></div></div>
+            <div class="grid-2"><div class="field"><label for="margin">Quiet zone (white border)</label><select class="input" id="margin"><option value="4" selected>4 modules (standard)</option><option value="2">2 modules</option><option value="6">6 modules</option></select></div><div class="field"><span class="lbl">&nbsp;</span><label class="check"><input type="checkbox" id="round"> Round dots</label></div></div>
+          </details>
+        </div>
+      </form>
+
+      <section class="card sticky-col lift" aria-labelledby="resTitle" id="results" tabindex="-1">
+        <h2 id="resTitle">Your QR code</h2>
+        <div class="qr-box" id="qr" role="img" aria-label="QR code preview"></div>
+        <p class="qr-scan" id="scan" aria-live="polite"></p>
+        <p class="note warn" id="warn" hidden></p>
+        <p class="hint" id="meta"></p>
+        <div class="actions">
+          <button class="btn primary" type="button" id="dlPng">Download PNG</button>
+          <button class="btn" type="button" id="dlSvg">SVG</button>
+          <button class="btn" type="button" id="copyPng">Copy image</button>
+          <button class="btn" type="button" id="printQr">Print</button>
+        </div>
+        <details class="adv tbl-det"><summary>What the code contains</summary><pre class="qr-payload" id="payload"></pre></details>
+      </section>
+    </div>
+
+    <aside class="ad-slot" aria-label="Advertisement">Advertisement</aside>
+
+    <section class="section reveal" id="how">
+      <div class="prose">
+        <h2><span class="shine">How QR codes work</span></h2>
+        <p>A QR code stores text as a grid of dark and light squares called modules. The three large squares in the corners tell a camera where the code is and which way up it is. The rest holds your data plus extra <b>error-correction</b> data, which lets a phone read the code even when part of it is dirty, torn or covered by a logo.</p>
+<p>This generator follows the international standard ISO/IEC 18004. It picks the smallest code size that fits your content, adds error correction, and tries all eight standard patterns ("masks") to choose the one that is easiest to scan.</p>
+<h3>Error-correction levels</h3>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Level</th><th>Can be damaged</th><th>Use it for</th></tr></thead><tbody>
+<tr><td>Low (L)</td><td>about 7%</td><td>Screens, long text, smallest code</td></tr>
+<tr><td>Medium (M)</td><td>about 15%</td><td>Most uses</td></tr>
+<tr><td>Quartile (Q)</td><td>about 25%</td><td>Packaging, outdoor posters</td></tr>
+<tr><td>High (H)</td><td>about 30%</td><td>Codes with a logo, rough surfaces</td></tr>
+</tbody></table></div>
+<p>When the content leaves room, the generator raises the level for free, so you get extra robustness without a bigger code.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2><span class="shine">Static codes never expire. Dynamic codes can.</span></h2>
+      <div class="prose">
+        <p>Many "free" QR sites make <b>dynamic</b> codes: the code points to their own short link, which then redirects to your page. That lets them show statistics, but it also means the code stops working if you stop paying, if the free trial ends or if the company closes. Printed menus, flyers and business cards have been left with dead codes this way.</p>
+<p>Every code made here is <b>static</b>: your link, Wi-Fi details or contact card are stored in the pattern itself. There is no redirect, no account and no tracking, and the code works for as long as the destination exists. To change where a printed code goes, point it at a page you control, such as your own website, and change that page instead.</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <h2><span class="shine">What you can put in a QR code</span></h2>
+      <div class="prose">
+        <ul>
+<li><b>Link:</b> any web address. Include https:// so phones open it straight away.</li>
+<li><b>Wi-Fi:</b> guests scan to join your network without typing the password. Supported by the camera apps on iPhone (iOS 11+) and Android 10+.</li>
+<li><b>Contact (vCard):</b> name, company, phone, email and website, saved to the phone's contacts in one tap. Ideal for business cards.</li>
+<li><b>Email:</b> opens a new email with the address, subject and message filled in.</li>
+<li><b>Call and SMS:</b> starts a call or a text message to your number. Use the full international format, such as +44 or +91.</li>
+<li><b>Text:</b> any short message, up to about 2,900 characters at the lowest error correction.</li>
+</ul>
+<p>Any language works, including Chinese, Arabic and Hindi, because text is stored as UTF-8.</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <h2><span class="shine">Design and printing tips</span></h2>
+      <div class="prose">
+        <ul>
+<li><b>Keep contrast high.</b> Dark dots on a light background scan best. The tool warns you when the contrast drops below 4:1 or when the colours are inverted.</li>
+<li><b>Keep the quiet zone.</b> The white border of four modules helps the camera find the code. Do not crop it off.</li>
+<li><b>Size for the distance.</b> A common rule is that the code should be at least one tenth of the scanning distance. For a poster read from 2 metres, make it 20 cm wide. On business cards, 2 cm is the practical minimum.</li>
+<li><b>Logos:</b> keep the logo small (the tool uses about 5% of the area) and use High error correction, which is set automatically.</li>
+<li><b>Print in SVG.</b> SVG is a vector file, so it stays perfectly sharp at any size. Use PNG for websites, slides and messages.</li>
+<li><b>Always test.</b> In Chrome and Edge the tool scans your design in the browser and confirms it reads back exactly. Test the printed result with two or three different phones as well.</li>
+<li><b>Short links make simpler codes.</b> Fewer characters mean fewer, larger squares that scan from further away.</li>
+</ul>
+      </div>
+    </section>
+    <section class="section reveal">
+      <h2><span class="shine">Privacy and safety</span></h2>
+      <div class="prose">
+        <p>Your content is turned into a QR code inside this browser. Nothing is uploaded, and the Wi-Fi password is never saved, even in your own browser. Other settings are remembered on this device only.</p>
+<p>When you scan codes yourself, check the address your phone shows before opening it. Fake QR stickers on parking meters and posters are a common scam, sometimes called "quishing".</p>
+      </div>
+    </section>
+
+    <section class="section reveal faq" id="faq">
+      <h2><span class="shine">QR code questions</span></h2>
+      <div class="prose" data-faq>
+        <details><summary>Is this QR code generator really free?</summary><p>Yes. There is no sign-up, no watermark, no limit and no expiry. The codes are static, so they keep working for ever.</p></details>
+        <details><summary>Do QR codes expire?</summary><p>Static QR codes, like the ones made here, never expire because the content is stored in the code itself. Dynamic codes from some sites stop working if the subscription or redirect service ends.</p></details>
+        <details><summary>How do I make a QR code for Wi-Fi?</summary><p>Choose Wi-Fi, enter the network name and password and pick the security type. Guests scan the code with their phone camera to join without typing the password.</p></details>
+        <details><summary>Can I add a logo to my QR code?</summary><p>Yes. Upload a PNG, JPG, WebP or SVG logo. It is placed in the centre and error correction is raised to High so the code still scans. Use the scan test to confirm it.</p></details>
+        <details><summary>What size should a printed QR code be?</summary><p>At least 2 cm (0.8 inches) wide for close-up use such as business cards, and about one tenth of the scanning distance for posters. Download the SVG for print so it stays sharp.</p></details>
+        <details><summary>Why is my QR code not scanning?</summary><p>The usual causes are low contrast, light dots on a dark background, a cropped white border, a logo that is too large or a code printed too small. The tool warns about the first two and tests scanning in Chrome and Edge.</p></details>
+        <details><summary>Can I track how many people scan my QR code?</summary><p>Not with a static code, because there is no redirect. You can add tracking parameters to your link, such as utm_source=flyer, and see the visits in your website analytics.</p></details>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2><span class="shine">Related tools</span></h2>
+      <div class="related"><a href="https://bingemind.com/word-counter/"><b>Word Counter</b><span>Words, characters, reading time, keywords and platform limits.</span></a><a href="https://bingemind.com/invoice-generator/"><b>Free Invoice Generator</b><span>Make a professional invoice and save it as PDF, in any currency.</span></a><a href="https://bingemind.com/password-generator/"><b>Password Generator</b><span>Random passwords and passphrases with strength and crack time.</span></a><a href="https://bingemind.com/image-compressor/"><b>Image Compressor</b><span>Shrink photos to an exact size like 50 KB. Batch, resize, ZIP.</span></a></div>
+    </section>
+
+    <section class="section reveal sources">
+      <h2 style="font-size:1.1rem">Notes</h2>
+      <p><strong>Estimate only.</strong> Codes follow ISO/IEC 18004 and are checked by decoding in the browser where supported. Always test printed codes with a few phones before printing in bulk. Your numbers stay in this browser.</p>
+      <p>Sources: Standard: <a href="https://www.iso.org/standard/62021.html">ISO/IEC 18004:2015</a>. Wi-Fi QR format: <a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-easy-connect">Wi-Fi Alliance Easy Connect</a>. Error-correction capacities: <a href="https://www.qrcode.com/en/about/error_correction.html">DENSO WAVE (inventor of the QR code)</a>. QR scam warning: <a href="https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information">US FTC</a>. <a href="https://bingemind.com/about/">About our tools</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/tools/">All tools</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+    <p>© <span data-year>2026</span> Bingemind. Free tools that run in your browser.</p>
+  </div>
+<!-- bm-site-links v1 --><nav class="bm-site-links" aria-label="Cookie settings"><a href="#bm-consent" data-cookie-settings>Cookie settings</a></nav><!-- /bm-site-links --></footer>
+<script type="module" src="./app.js"></script>
+<script src="/js/consent.js" data-analytics="on" defer></script></body>
+</html>

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" class="js-off">
+<head>
+<!-- bm-consent-default v1 -->
+<script>window.dataLayer=window.dataLayer||[];window.bmAnalyticsAllowed=false;function gtag(){if(arguments[0]==='event'&&!window.bmAnalyticsAllowed)return;window.dataLayer.push(arguments)}gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});</script>
+<!-- /bm-consent-default -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+      // GA4 event "tool_used": once per page load, on the first real use of the tool.
+      (function () {
+        var sent = false;
+        var CONTROL = 'input,select,textarea,button,label,canvas,[contenteditable],[role="button"],[role="tab"],[role="switch"],[role="checkbox"],[role="radio"],[role="slider"]';
+        function slug() {
+          // Shared hosts (bingemind.com/<slug>/, github.io previews) use the first path segment. A tool's own domain uses the host name.
+          var h = location.hostname;
+          if (/(^|\.)(bingemind\.com|github\.io)$/.test(h)) return location.pathname.split('/').filter(Boolean)[0] || h;
+          return h.replace(/^www\./, '');
+        }
+        function onUse(e) {
+          if (sent || !window.bmAnalyticsAllowed || typeof gtag !== 'function') return;
+          var t = e.target;
+          if (!t || !t.closest) return;
+          var main = document.getElementById('main');
+          if (!main || !main.contains(t)) return;
+          if (t.closest('header,nav,footer,details,summary,a')) return;
+          if (e.type === 'click' && !t.closest(CONTROL)) return;
+          sent = true;
+          gtag('event', 'tool_used', { tool: slug() });
+        }
+        ['input', 'change', 'click'].forEach(function (n) { document.addEventListener(n, onUse, true); });
+      })();
+    </script>
+<title>Image Compressor: Reduce Photo Size to 20, 50 or 100 KB</title>
+<meta name="description" content="Compress JPG, PNG and WebP images to an exact size such as 50 KB or 100 KB, or by quality. Batch, resize, compare before and after, download as ZIP. Nothing is uploaded.">
+<link rel="canonical" href="https://bingemind.com/image-compressor/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bingemind">
+<meta property="og:title" content="Image Compressor: Reduce Photo Size to 20, 50 or 100 KB">
+<meta property="og:description" content="Shrink photos to an exact size like 50 KB. Batch, resize, ZIP.">
+<meta property="og:url" content="https://bingemind.com/image-compressor/">
+<meta property="og:image" content="https://bingemind.com/image-compressor/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Image Compressor: Shrink photos to an exact size like 50 KB. Batch, resize, ZIP.">
+<meta name="twitter:image" content="https://bingemind.com/image-compressor/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090d1c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon_io/favicon-32x32.png">
+<script>try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="./kit.css">
+<link rel="modulepreload" href="./kit.js"><link rel="modulepreload" href="./region.js">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"Image Compressor","url":"https://bingemind.com/image-compressor/","inLanguage":"en","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","dateModified":"2026-11-15","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"Bingemind","url":"https://bingemind.com/"},"isPartOf":{"@type":"WebSite","name":"Bingemind","url":"https://bingemind.com/"},"description":"Compress JPG, PNG and WebP images to an exact size such as 50 KB or 100 KB, or by quality. Batch, resize, compare before and after, download as ZIP. Nothing is uploaded."},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tools","item":"https://bingemind.com/tools/"},{"@type":"ListItem","position":2,"name":"Image Compressor","item":"https://bingemind.com/image-compressor/"}]}]}
+</script>
+<script type="application/ld+json" id="faq-schema">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I compress an image to 50 KB?","acceptedAnswer":{"@type":"Answer","text":"Choose Target size, press 50 KB, then drop in your photo. The tool finds the highest quality that fits under 50 KB and shrinks the dimensions if needed. Download the result when it shows a size under 50 KB."}},{"@type":"Question","name":"Are my images uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Compression happens inside your browser. Your photos never leave your device, which also means it works with private documents."}},{"@type":"Question","name":"Does compressing reduce quality?","acceptedAnswer":{"@type":"Answer","text":"Slightly, but at 70% to 85% quality most people cannot see a difference in photos. Use the before/after slider to check. Reducing the dimensions often saves more space with less visible change."}},{"@type":"Question","name":"Can I compress many images at once?","acceptedAnswer":{"@type":"Answer","text":"Yes, up to 50 at a time. Each one can be downloaded separately, or all together as a single ZIP file."}},{"@type":"Question","name":"Why did my PNG not get smaller?","acceptedAnswer":{"@type":"Answer","text":"PNG is a lossless format, so re-saving it at the same size changes little. Convert it to WebP or JPG, or reduce its maximum width, to make it much smaller."}},{"@type":"Question","name":"Does it remove location data from photos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Re-saving through the browser drops EXIF metadata such as GPS location, camera model and date, while keeping the photo the right way up."}},{"@type":"Question","name":"Can I compress HEIC photos from an iPhone?","acceptedAnswer":{"@type":"Answer","text":"Safari can open HEIC files, so on an iPhone or Mac it works there. Other browsers cannot read HEIC yet: set your iPhone camera to Most Compatible, or share the photo as JPG first."}}]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3415157843778771"
+     crossorigin="anonymous"></script>
+<!-- bm-ad-safe v1: added by briefs/inject_adsense.py (ADS-2). Google anchor ads float over the top or bottom edge of the screen. -->
+<style id="bm-ad-safe">
+@media screen {
+  /* Room at the end of every page, so the footer and the last buttons can scroll clear of a bottom anchor ad (up to 100 px tall, plus a 24 px gap). Present from the first paint, so nothing moves when an ad shows. */
+  body::after { content: ""; display: block; height: calc(124px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 1023px) {
+  /* Phones and tablets: the header scrolls away with the page, so its links never stay under or next to a top anchor ad. */
+  header.sticky { position: static; }
+}
+</style>
+<!-- /bm-ad-safe -->
+<link rel="stylesheet" href="/js/site-footer.css">
+</head>
+<body><!-- bm-topbar v1 --><style>.bm-topbar{background:#fff;border-bottom:1px solid #e5e7eb;font:500 14px/1.2 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;position:relative;z-index:50}.bm-topbar nav{max-width:1120px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:4px;min-height:44px;flex-wrap:wrap}.bm-topbar a{color:#374151;text-decoration:none;padding:12px 10px;border-radius:6px}.bm-topbar a:hover,.bm-topbar a:focus-visible{color:#111827;background:#f3f4f6}.bm-topbar a:focus-visible{outline:2px solid #2563eb;outline-offset:1px}.bm-topbar .bm-brand{font-weight:700;color:#111827;margin-right:auto;padding-left:0}@media (prefers-color-scheme:dark){.bm-topbar{background:#0b0f17;border-color:#1f2937}.bm-topbar a{color:#d1d5db}.bm-topbar a:hover,.bm-topbar a:focus-visible{color:#fff;background:#1f2937}.bm-topbar .bm-brand{color:#fff}}@media print{.bm-topbar{display:none}}</style><div class="bm-topbar"><nav aria-label="Bingemind"><a class="bm-brand" href="/">Bingemind</a><a href="/tools/">All tools</a><a href="/about/">About</a><a href="/contact/">Contact</a></nav></div><!-- /bm-topbar -->
+<a class="skip" href="#calc">Skip to the tool</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="https://bingemind.com/"><span class="brand-dot" aria-hidden="true"></span>Bingemind</a>
+    <nav class="head-nav" aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a class="hide-sm" href="#faq">FAQ</a>
+      <span data-region-picker></span>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <p class="crumbs rise"><a href="https://bingemind.com/tools/">Tools</a> / Image Compressor</p>
+      <span class="eyebrow rise d1">JPG · PNG · WebP · nothing leaves your device</span>
+      <h1 class="lift"><span class="shine">Image Compressor</span></h1>
+      <p class="lede lift">Drop in your photos and choose a target such as 50 KB, or a quality level. Every image is compressed in your browser, so private photos are never uploaded. Compare before and after, then download one by one or all together as a ZIP.</p>
+      <ul class="trust rise d4"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Exact target size</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Never uploaded</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Batch up to 50</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Before/after slider</li></ul>
+      <p class="byline rise d4">By the Bingemind tools team · Last checked <time datetime="2026-11-15">15 November 2026</time>.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <noscript><p class="note">This tool needs JavaScript. Without it, most phones can share a smaller copy of a photo from the Photos app.</p></noscript>
+    <div class="tool" id="calc">
+      <form class="card lift" id="form" novalidate>
+        <h2>Your images</h2>
+        <p class="sub">Drop, choose or paste images. They are compressed on your device and never uploaded.</p>
+        <div class="fields">
+          <label class="drop" id="drop" for="files">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4m0 0-4 4m4-4 4 4"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <b>Drop images here or choose files</b><span class="hint">JPG, PNG, WebP, GIF · up to 50 at once · you can also paste</span>
+            <input type="file" id="files" accept="image/*" multiple>
+          </label>
+          <div class="field"><span class="lbl" id="modeL">Compress by</span><div class="seg" id="mode" aria-labelledby="modeL"><button type="button" data-value="target" aria-checked="true">Target size</button><button type="button" data-value="quality" aria-checked="false">Quality</button></div></div>
+          <div class="field" id="targetF"><label for="kb">Maximum file size</label><div class="affix"><input class="input" id="kb" inputmode="numeric" value="100"><span class="post" aria-hidden="true">KB</span></div>
+            <div class="mini-actions" style="flex-wrap:wrap"><button class="btn small" type="button" data-kb="20">20 KB</button><button class="btn small" type="button" data-kb="50">50 KB</button><button class="btn small" type="button" data-kb="100">100 KB</button><button class="btn small" type="button" data-kb="200">200 KB</button><button class="btn small" type="button" data-kb="500">500 KB</button><button class="btn small" type="button" data-kb="1024">1 MB</button></div></div>
+          <div class="field" id="qualityF" hidden><label for="quality">Quality: <b id="qOut">75%</b></label><input class="range" type="range" id="quality" min="10" max="100" value="75"></div>
+          <div class="grid-2">
+            <div class="field"><label for="format">Save as</label><select class="input" id="format"><option value="same">Automatic (JPG stays JPG, PNG becomes WebP)</option><option value="image/jpeg">JPG (photos, best support)</option><option value="image/webp">WebP (smallest, keeps transparency)</option><option value="image/png">PNG (lossless)</option></select></div>
+            <div class="field"><label for="maxDim">Maximum width or height</label><select class="input" id="maxDim"><option value="0">Keep original</option><option value="3840">3840 px (4K)</option><option value="2560">2560 px</option><option value="1920" selected>1920 px (Full HD)</option><option value="1280">1280 px</option><option value="1080">1080 px (Instagram)</option><option value="800">800 px</option><option value="600">600 px</option></select></div>
+          </div>
+        </div>
+        <div class="mini-actions"><button class="btn small" type="button" id="clearAll">Clear all</button></div>
+      </form>
+
+      <section class="card sticky-col lift" aria-labelledby="resTitle" id="results" tabindex="-1">
+        <div class="result-top"><div><h2 id="resTitle">Size saved</h2><div class="big" id="big">—</div></div><div class="hint" id="status" aria-live="polite">Add images to start</div></div>
+        <div class="ic-compare" id="cmp" hidden><img id="cmpBefore" alt="Original image"><img id="cmpAfter" class="after" alt="Compressed image"><span class="tag" style="left:8px">Original</span><span class="tag" style="right:8px">Compressed</span><input type="range" id="cmpRange" min="0" max="100" value="50" aria-label="Move to compare original and compressed"></div>
+        <p class="hint" id="cmpLabel"></p>
+        <ul class="ic-list" id="list"></ul>
+        <div class="actions"><button class="btn primary" type="button" id="zipAll" hidden>Download all as ZIP</button></div>
+      </section>
+    </div>
+
+    <aside class="ad-slot" aria-label="Advertisement">Advertisement</aside>
+
+    <section class="section reveal" id="how">
+      <div class="prose">
+        <h2><span class="shine">How the compression works</span></h2>
+        <p>Each image is decoded by your browser, resized if you chose a maximum width, and saved again as JPG, WebP or PNG. Nothing is sent to a server, so it works with private documents and even offline once the page has loaded.</p>
+<h3>Hitting an exact size such as 50 KB</h3>
+<p>In <b>Target size</b> mode the tool searches for the highest quality that still fits under your limit. It tries a middle quality, checks the file size, then moves up or down, halving the gap each time, until it is within about half a percent. If even low quality is too big, it reduces the dimensions step by step until the file fits, so the result always stays under the limit you set.</p>
+<h3>Quality mode</h3>
+<p>Choose a quality from 10% to 100%. Around 70% to 80% is usually indistinguishable from the original for photos and makes them 60% to 90% smaller.</p>
+<h3>Privacy bonus: location data removed</h3>
+<p>Photos from phones often contain hidden EXIF data, including the GPS location where they were taken. Re-saving through the browser strips this metadata, which makes compressed copies safer to share. Orientation is applied first, so photos stay the right way up.</p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2><span class="shine">Common size limits</span></h2>
+      <div class="prose">
+        <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Where</th><th>Typical limit</th><th>Suggested setting</th></tr></thead><tbody>
+<tr><td>Government job and exam forms (India: SSC, UPSC, bank exams)</td><td>Photo 20–50 KB, signature 10–20 KB</td><td>Target 50 KB (photo), 20 KB (signature), JPG, 600 px</td></tr>
+<tr><td>Passport and visa portals</td><td>Often 240 KB to 1 MB</td><td>Target 200 KB, JPG</td></tr>
+<tr><td>Email attachments</td><td>20–25 MB total (Gmail, Outlook)</td><td>Quality 75%, 1920 px</td></tr>
+<tr><td>Website images</td><td>Under 200 KB each for fast pages</td><td>WebP, quality 75%, 1920 px</td></tr>
+<tr><td>Instagram</td><td>1080 px wide is displayed</td><td>1080 px, quality 85%</td></tr>
+<tr><td>WhatsApp</td><td>Compresses again on send</td><td>Send as a document to avoid double compression</td></tr>
+</tbody></table></div>
+<p>Always check the exact requirements on the form you are filling in: some also fix the pixel size (for example 200 × 230 px) or the file type.</p>
+      </div>
+    </section>
+    <section class="section reveal">
+      <h2><span class="shine">JPG, PNG or WebP?</span></h2>
+      <div class="prose">
+        <ul>
+<li><b>JPG</b> is best for photos and is accepted everywhere. It does not support transparency, so transparent areas become white.</li>
+<li><b>WebP</b> is usually 25% to 35% smaller than JPG at the same visual quality and keeps transparency. All modern browsers support it, but some older upload forms still reject it.</li>
+<li><b>PNG</b> is lossless: perfect for screenshots, logos and text, but large for photos. Re-saving a PNG as PNG only gets smaller if you also reduce its dimensions, which is why Automatic saves PNGs as WebP, keeping any transparency.</li>
+</ul>
+<h3>Tips for the smallest files</h3>
+<ul>
+<li><b>Resize first.</b> A 4000-pixel phone photo shown 1200 pixels wide wastes over 90% of its pixels. Reducing dimensions saves more than lowering quality.</li>
+<li><b>Crop before compressing</b> so you do not spend bytes on background.</li>
+<li><b>Avoid compressing the same file again and again.</b> Each JPG save loses a little detail, so start from the original.</li>
+<li><b>Use the before/after slider</b> to check faces and text before you submit.</li>
+</ul>
+      </div>
+    </section>
+    <section class="section reveal">
+      <h2><span class="shine">Privacy</span></h2>
+      <div class="prose">
+        <p>Images are processed with your browser's own image functions. They are not uploaded, logged or stored, and they disappear when you close the page. Only your settings, such as the target size, are remembered on this device.</p>
+      </div>
+    </section>
+
+    <section class="section reveal faq" id="faq">
+      <h2><span class="shine">Image compression questions</span></h2>
+      <div class="prose" data-faq>
+        <details><summary>How do I compress an image to 50 KB?</summary><p>Choose Target size, press 50 KB, then drop in your photo. The tool finds the highest quality that fits under 50 KB and shrinks the dimensions if needed. Download the result when it shows a size under 50 KB.</p></details>
+        <details><summary>Are my images uploaded to a server?</summary><p>No. Compression happens inside your browser. Your photos never leave your device, which also means it works with private documents.</p></details>
+        <details><summary>Does compressing reduce quality?</summary><p>Slightly, but at 70% to 85% quality most people cannot see a difference in photos. Use the before/after slider to check. Reducing the dimensions often saves more space with less visible change.</p></details>
+        <details><summary>Can I compress many images at once?</summary><p>Yes, up to 50 at a time. Each one can be downloaded separately, or all together as a single ZIP file.</p></details>
+        <details><summary>Why did my PNG not get smaller?</summary><p>PNG is a lossless format, so re-saving it at the same size changes little. Convert it to WebP or JPG, or reduce its maximum width, to make it much smaller.</p></details>
+        <details><summary>Does it remove location data from photos?</summary><p>Yes. Re-saving through the browser drops EXIF metadata such as GPS location, camera model and date, while keeping the photo the right way up.</p></details>
+        <details><summary>Can I compress HEIC photos from an iPhone?</summary><p>Safari can open HEIC files, so on an iPhone or Mac it works there. Other browsers cannot read HEIC yet: set your iPhone camera to Most Compatible, or share the photo as JPG first.</p></details>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2><span class="shine">Related tools</span></h2>
+      <div class="related"><a href="https://bingemind.com/qr-code-generator/"><b>Free QR Code Generator</b><span>QR codes with your logo and colours that never expire. PNG or SVG.</span></a><a href="https://bingemind.com/word-counter/"><b>Word Counter</b><span>Words, characters, reading time, keywords and platform limits.</span></a><a href="https://bingemind.com/invoice-generator/"><b>Free Invoice Generator</b><span>Make a professional invoice and save it as PDF, in any currency.</span></a><a href="https://bingemind.com/password-generator/"><b>Password Generator</b><span>Random passwords and passphrases with strength and crack time.</span></a></div>
+    </section>
+
+    <section class="section reveal sources">
+      <h2 style="font-size:1.1rem">Notes</h2>
+      <p><strong>Estimate only.</strong> Results depend on your browser’s image encoder, so exact sizes can differ slightly between Chrome, Safari and Firefox. Check the requirements of the form or site you are uploading to. Your numbers stay in this browser.</p>
+      <p>Sources: Image formats: <a href="https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types">MDN image file type guide</a> and <a href="https://developers.google.com/speed/webp/faq">Google WebP FAQ</a>. Web image size guidance: <a href="https://web.dev/articles/fast#optimize_your_images">web.dev</a>. ZIP format: <a href="https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT">PKWARE APPNOTE</a>. <a href="https://bingemind.com/about/">About our tools</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <nav aria-label="Footer"><a href="/tools/">All tools</a><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+    <p>© <span data-year>2026</span> Bingemind. Free tools that run in your browser.</p>
+  </div>
+<!-- bm-site-links v1 --><nav class="bm-site-links" aria-label="Cookie settings"><a href="#bm-consent" data-cookie-settings>Cookie settings</a></nav><!-- /bm-site-links --></footer>
+<script type="module" src="./app.js"></script>
+<script src="/js/consent.js" data-analytics="on" defer></script></body>
+</html>

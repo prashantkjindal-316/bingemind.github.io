@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+<style>
+.a{animation-duration:6s;animation-iteration-count:infinite;animation-timing-function:cubic-bezier(.2,.7,.2,1);animation-fill-mode:both}
+.fb{transform-box:fill-box}
+.draw{stroke-dasharray:1;animation-name:draw}
+@keyframes draw{0%{stroke-dashoffset:1}28%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
+.rise{animation-name:rise}
+@keyframes rise{0%{opacity:0;transform:translateY(18px)}22%,88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-6px)}}
+.pop{animation-name:pop;transform-box:fill-box;transform-origin:center}
+@keyframes pop{0%{opacity:0;transform:scale(.2)}18%{opacity:1;transform:scale(1.12)}26%,88%{transform:scale(1)}100%{opacity:0;transform:scale(.6)}}
+.gy{animation-name:gy;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes gy{0%{transform:scaleY(0)}30%,88%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+.gx{animation-name:gx;transform-box:fill-box;transform-origin:0 50%}
+@keyframes gx{0%{transform:scaleX(0)}30%,88%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.shrink{animation-name:shrink;transform-box:fill-box;transform-origin:0 50%}
+@keyframes shrink{0%,10%{transform:scaleX(1)}40%,88%{transform:scaleX(.001)}100%{transform:scaleX(1)}}
+.spin{animation:spin 9s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes spin{to{transform:rotate(360deg)}}
+.float{animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-7px)}}
+.glow{animation:glow 3s ease-in-out infinite}
+@keyframes glow{50%{opacity:.45}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.stamp{animation-name:stamp;transform-box:fill-box;transform-origin:center}
+@keyframes stamp{0%,40%{opacity:0;transform:scale(2.4) rotate(-14deg)}50%{opacity:1;transform:scale(.92) rotate(-14deg)}56%,88%{opacity:1;transform:scale(1) rotate(-14deg)}100%{opacity:0;transform:scale(1) rotate(-14deg)}}
+.drive{animation-name:drive}
+@keyframes drive{0%{transform:translateX(-260px)}30%,88%{transform:none}100%{transform:translateX(320px)}}
+.swing{animation-name:swing;transform-box:view-box;transform-origin:240px 220px}
+@keyframes swing{0%{transform:rotate(-80deg)}22%{transform:rotate(20deg)}30%{transform:rotate(-8deg)}36%,88%{transform:rotate(0)}100%{transform:rotate(-80deg)}}
+.tick{animation:tick 3s linear infinite;transform-box:view-box}
+.drumroll{animation:drumroll 1.6s linear infinite}
+.scanline{animation:scanline 3s ease-in-out infinite}
+@keyframes scanline{0%,100%{transform:translateY(0)}50%{transform:translateY(190px)}}
+.squeeze{animation-name:squeeze;transform-box:fill-box;transform-origin:0 50%}
+@keyframes squeeze{0%,15%{transform:none}40%,88%{transform:scale(.62)}100%{transform:none}}
+@keyframes drumroll{to{transform:translateX(-40px)}}
+@keyframes tick{to{transform:rotate(360deg)}}
+.fast{animation-duration:1.2s}
+.d1{animation-delay:.25s}.d2{animation-delay:.5s}.d3{animation-delay:.75s}.d4{animation-delay:1s}.d5{animation-delay:1.25s}.d6{animation-delay:1.5s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<radialGradient id="bg" cx="70%" cy="20%" r="95%"><stop offset="0" stop-color="#1a2550"/><stop offset=".55" stop-color="#0e1530"/><stop offset="1" stop-color="#090d1c"/></radialGradient>
+<radialGradient id="hl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#69db7c" stop-opacity=".55"/><stop offset="1" stop-color="#69db7c" stop-opacity="0"/></radialGradient>
+<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe2a8"/><stop offset=".5" stop-color="#e7b861"/><stop offset="1" stop-color="#c8901f"/></linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e7b861" stop-opacity=".45"/><stop offset="1" stop-color="#e7b861" stop-opacity="0"/></linearGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#ffffff" opacity=".07"/></pattern>
+</defs>
+<rect width="480" height="300" fill="url(#bg)"/><rect width="480" height="300" fill="url(#dots)"/>
+<circle class="glow" cx="360" cy="70" r="150" fill="url(#hl)"/>
+<rect x="36" y="36" width="228" height="228" rx="18" fill="#fbfaf6"/><g transform="translate(52 52) scale(7.8400)"><path class="a rise d1" d="M0,0h1v1h-1zM1,0h1v1h-1zM2,0h1v1h-1zM3,0h1v1h-1zM4,0h1v1h-1zM0,1h1v1h-1zM0,2h1v1h-1zM2,2h1v1h-1zM0,3h1v1h-1zM0,4h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g><g transform="translate(52 52) scale(7.8400)"><path class="a rise d2" d="M5,0h1v1h-1zM6,0h1v1h-1zM6,1h1v1h-1zM3,2h1v1h-1zM4,2h1v1h-1zM6,2h1v1h-1zM2,3h1v1h-1zM3,3h1v1h-1zM4,3h1v1h-1zM2,4h1v1h-1zM3,4h1v1h-1zM4,4h1v1h-1zM0,5h1v1h-1zM0,6h1v1h-1zM1,6h1v1h-1zM2,6h1v1h-1zM0,8h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g><g transform="translate(52 52) scale(7.8400)"><path class="a rise d3" d="M9,0h1v1h-1zM10,0h1v1h-1zM11,1h1v1h-1zM8,2h1v1h-1zM10,2h1v1h-1zM6,3h1v1h-1zM8,3h1v1h-1zM6,4h1v1h-1zM8,4h1v1h-1zM6,5h1v1h-1zM3,6h1v1h-1zM4,6h1v1h-1zM5,6h1v1h-1zM6,6h1v1h-1zM2,8h1v1h-1zM3,8h1v1h-1zM4,8h1v1h-1zM0,9h1v1h-1zM1,9h1v1h-1zM2,9h1v1h-1zM3,9h1v1h-1zM1,10h1v1h-1zM2,10h1v1h-1zM0,11h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g><g transform="translate(52 52) scale(7.8400)"><path class="a rise d4" d="M13,0h1v1h-1zM13,1h1v1h-1zM14,1h1v1h-1zM15,1h1v1h-1zM11,2h1v1h-1zM12,2h1v1h-1zM13,3h1v1h-1zM11,4h1v1h-1zM8,5h1v1h-1zM9,5h1v1h-1zM10,5h1v1h-1zM8,6h1v1h-1zM10,6h1v1h-1zM8,7h1v1h-1zM9,7h1v1h-1zM5,8h1v1h-1zM6,8h1v1h-1zM5,9h1v1h-1zM3,10h1v1h-1zM4,10h1v1h-1zM5,10h1v1h-1zM6,10h1v1h-1zM2,11h1v1h-1zM3,12h1v1h-1zM4,12h1v1h-1zM0,13h1v1h-1zM1,13h1v1h-1zM3,13h1v1h-1zM0,14h1v1h-1zM2,14h1v1h-1zM0,15h1v1h-1zM0,16h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g><g transform="translate(52 52) scale(7.8400)"><path class="a rise d5" d="M18,0h1v1h-1zM19,0h1v1h-1zM20,0h1v1h-1zM18,1h1v1h-1zM15,2h1v1h-1zM16,2h1v1h-1zM18,2h1v1h-1zM14,3h1v1h-1zM15,3h1v1h-1zM16,4h1v1h-1zM13,5h1v1h-1zM15,5h1v1h-1zM12,6h1v1h-1zM14,6h1v1h-1zM12,7h1v1h-1zM11,8h1v1h-1zM8,9h1v1h-1zM10,9h1v1h-1zM7,10h1v1h-1zM8,10h1v1h-1zM9,10h1v1h-1zM10,10h1v1h-1zM5,12h1v1h-1zM6,12h1v1h-1zM7,12h1v1h-1zM4,13h1v1h-1zM5,13h1v1h-1zM3,14h1v1h-1zM4,14h1v1h-1zM6,14h1v1h-1zM3,16h1v1h-1zM4,16h1v1h-1zM0,18h1v1h-1zM1,18h1v1h-1zM2,18h1v1h-1zM0,19h1v1h-1zM0,20h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g><g transform="translate(52 52) scale(7.8400)"><path class="a rise d6" d="M21,0h1v1h-1zM22,0h1v1h-1zM23,0h1v1h-1zM24,0h1v1h-1zM24,1h1v1h-1zM20,2h1v1h-1zM21,2h1v1h-1zM22,2h1v1h-1zM24,2h1v1h-1zM18,3h1v1h-1zM20,3h1v1h-1zM21,3h1v1h-1zM22,3h1v1h-1zM24,3h1v1h-1zM18,4h1v1h-1zM20,4h1v1h-1zM21,4h1v1h-1zM22,4h1v1h-1zM24,4h1v1h-1zM18,5h1v1h-1zM24,5h1v1h-1zM16,6h1v1h-1zM18,6h1v1h-1zM19,6h1v1h-1zM20,6h1v1h-1zM21,6h1v1h-1zM22,6h1v1h-1zM23,6h1v1h-1zM24,6h1v1h-1zM14,7h1v1h-1zM16,7h1v1h-1zM13,8h1v1h-1zM14,8h1v1h-1zM18,8h1v1h-1zM19,8h1v1h-1zM20,8h1v1h-1zM21,8h1v1h-1zM22,8h1v1h-1zM12,9h1v1h-1zM13,9h1v1h-1zM16,9h1v1h-1zM19,9h1v1h-1zM23,9h1v1h-1zM11,10h1v1h-1zM12,10h1v1h-1zM13,10h1v1h-1zM14,10h1v1h-1zM15,10h1v1h-1zM16,10h1v1h-1zM20,10h1v1h-1zM21,10h1v1h-1zM23,10h1v1h-1zM24,10h1v1h-1zM10,11h1v1h-1zM11,11h1v1h-1zM14,11h1v1h-1zM15,11h1v1h-1zM17,11h1v1h-1zM18,11h1v1h-1zM24,11h1v1h-1zM10,12h1v1h-1zM13,12h1v1h-1zM14,12h1v1h-1zM17,12h1v1h-1zM18,12h1v1h-1zM20,12h1v1h-1zM22,12h1v1h-1zM23,12h1v1h-1zM24,12h1v1h-1zM9,13h1v1h-1zM10,13h1v1h-1zM12,13h1v1h-1zM13,13h1v1h-1zM16,13h1v1h-1zM19,13h1v1h-1zM21,13h1v1h-1zM23,13h1v1h-1zM7,14h1v1h-1zM9,14h1v1h-1zM14,14h1v1h-1zM15,14h1v1h-1zM16,14h1v1h-1zM17,14h1v1h-1zM19,14h1v1h-1zM20,14h1v1h-1zM21,14h1v1h-1zM23,14h1v1h-1zM24,14h1v1h-1zM10,15h1v1h-1zM12,15h1v1h-1zM14,15h1v1h-1zM15,15h1v1h-1zM16,15h1v1h-1zM19,15h1v1h-1zM20,15h1v1h-1zM24,15h1v1h-1zM6,16h1v1h-1zM7,16h1v1h-1zM8,16h1v1h-1zM9,16h1v1h-1zM12,16h1v1h-1zM13,16h1v1h-1zM16,16h1v1h-1zM17,16h1v1h-1zM18,16h1v1h-1zM19,16h1v1h-1zM20,16h1v1h-1zM22,16h1v1h-1zM8,17h1v1h-1zM13,17h1v1h-1zM15,17h1v1h-1zM16,17h1v1h-1zM20,17h1v1h-1zM21,17h1v1h-1zM3,18h1v1h-1zM4,18h1v1h-1zM5,18h1v1h-1zM6,18h1v1h-1zM11,18h1v1h-1zM12,18h1v1h-1zM13,18h1v1h-1zM14,18h1v1h-1zM16,18h1v1h-1zM18,18h1v1h-1zM20,18h1v1h-1zM22,18h1v1h-1zM23,18h1v1h-1zM24,18h1v1h-1zM6,19h1v1h-1zM8,19h1v1h-1zM9,19h1v1h-1zM11,19h1v1h-1zM14,19h1v1h-1zM16,19h1v1h-1zM20,19h1v1h-1zM21,19h1v1h-1zM2,20h1v1h-1zM3,20h1v1h-1zM4,20h1v1h-1zM6,20h1v1h-1zM8,20h1v1h-1zM11,20h1v1h-1zM15,20h1v1h-1zM16,20h1v1h-1zM17,20h1v1h-1zM18,20h1v1h-1zM19,20h1v1h-1zM20,20h1v1h-1zM22,20h1v1h-1zM23,20h1v1h-1zM24,20h1v1h-1zM0,21h1v1h-1zM2,21h1v1h-1zM3,21h1v1h-1zM4,21h1v1h-1zM6,21h1v1h-1zM8,21h1v1h-1zM9,21h1v1h-1zM12,21h1v1h-1zM13,21h1v1h-1zM17,21h1v1h-1zM18,21h1v1h-1zM20,21h1v1h-1zM21,21h1v1h-1zM22,21h1v1h-1zM23,21h1v1h-1zM24,21h1v1h-1zM0,22h1v1h-1zM2,22h1v1h-1zM3,22h1v1h-1zM4,22h1v1h-1zM6,22h1v1h-1zM8,22h1v1h-1zM10,22h1v1h-1zM13,22h1v1h-1zM14,22h1v1h-1zM21,22h1v1h-1zM22,22h1v1h-1zM24,22h1v1h-1zM0,23h1v1h-1zM6,23h1v1h-1zM12,23h1v1h-1zM13,23h1v1h-1zM15,23h1v1h-1zM16,23h1v1h-1zM17,23h1v1h-1zM18,23h1v1h-1zM19,23h1v1h-1zM20,23h1v1h-1zM21,23h1v1h-1zM24,23h1v1h-1zM0,24h1v1h-1zM1,24h1v1h-1zM2,24h1v1h-1zM3,24h1v1h-1zM4,24h1v1h-1zM5,24h1v1h-1zM6,24h1v1h-1zM8,24h1v1h-1zM12,24h1v1h-1zM14,24h1v1h-1zM17,24h1v1h-1zM19,24h1v1h-1zM20,24h1v1h-1zM21,24h1v1h-1zM22,24h1v1h-1zM23,24h1v1h-1zM24,24h1v1h-1z" fill="#12162a" shape-rendering="crispEdges"/></g>
+<rect class="scanline" x="44" y="52" width="212" height="4" rx="2" fill="#69db7c" opacity=".9"/>
+<g class="a pop d2"><rect x="286" y="56" width="141" height="30" rx="15" fill="#e7b861"/><text x="356.4" y="76" font-family="ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" fill="#1b1404" text-anchor="middle" >Never expires</text></g><g class="a pop d3"><rect x="286" y="102" width="150" height="30" rx="15" fill="#da77f2"/><text x="361.2" y="122" font-family="ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" fill="#26062e" text-anchor="middle" >Logo + colours</text></g><g class="a pop d4"><rect x="286" y="148" width="141" height="30" rx="15" fill="#7d95ff"/><text x="356.4" y="168" font-family="ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" fill="#0a1030" text-anchor="middle" >Wi-Fi · vCard</text></g><g class="a pop d5"><rect x="286" y="194" width="141" height="30" rx="15" fill="#69db7c"/><text x="356.4" y="214" font-family="ui-rounded,'SF Pro Rounded','Segoe UI',system-ui,-apple-system,sans-serif" font-size="15" font-weight="800" fill="#06210d" text-anchor="middle" >✓ Scan tested</text></g>
+</svg>
